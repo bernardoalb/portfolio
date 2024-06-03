@@ -1,0 +1,58 @@
+body {
+    background-color: #fff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contatos {
+    display: flex;
+    gap: 20px;
+}
+
+.contato {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato a {
+    text-decoration: none;
+}
+
+.contato img {
+    max-width: 100%;
+    height: auto;
+}
+
+.obrigado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.obrigado h1 {
+    font-size: 4em;
+    font-weight: bold;
+}
