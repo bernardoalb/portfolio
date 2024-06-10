@@ -79,3 +79,29 @@ h1 {
 .image:nth-child(5) {
     grid-column: span 2;
 }
+@media (max-width: 768px) {
+    header {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Mudando para coluna no mobile */
+        align-items: center;
+    }
+
+    .images-container {
+        width: 100%;
+        grid-template-columns: 1fr; /* Uma coluna no mobile */
+        gap: 10px;
+    }
+
+    .image:nth-child(5) {
+        grid-column: span 1; /* Ajustando para ocupar uma coluna no mobile */
+    }
+}

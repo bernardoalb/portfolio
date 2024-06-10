@@ -111,3 +111,37 @@ nav ul li a:hover {
     font-size: 4em;
     font-weight: bold;
 }
+@media (max-width: 768px) {
+    header {
+        font-size: 25px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Mudando para coluna no mobile */
+        align-items: center;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contatos {
+        flex-direction: column; /* Mudando para coluna no mobile */
+    }
+
+    .contato img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .obrigado h1 {
+        font-size: 2em;
+    }
+}

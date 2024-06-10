@@ -120,3 +120,45 @@ body, html {
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Mudar para coluna no mobile */
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        align-items: center; /* Alinhar ao centro no mobile */
+        text-align: center;
+    }
+
+    .sidebar h1 {
+        font-size: 40px;
+    }
+
+    .sidebar ul {
+        flex-direction: column; /* Links na vertical no mobile */
+        align-items: center;
+    }
+
+    .sidebar ul li {
+        margin: 10px 0;
+    }
+
+    .sidebar ul li a {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .sidebar p {
+        font-size: 40px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .slideshow-container {
+        max-width: 80%;
+    }
+}

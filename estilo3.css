@@ -102,5 +102,42 @@ button {
 button:hover {
     background-color: #444;
 }
+@media (max-width: 768px) {
+    header {
+        font-size: 20px;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Mudando para coluna no mobile */
+        align-items: center;
+    }
 
+    .main-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .image-text-group {
+        width: 100%;
+        max-width: 300px;
+        flex-direction: column;
+    }
+
+    .image {
+        width: 100%;
+        max-width: 300px;
+        height: auto; /* Ajustando a altura para auto no mobile */
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+    }
+}
 
